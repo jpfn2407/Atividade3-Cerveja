@@ -5,6 +5,8 @@ const { response } = require('express')
 
 const app = express()
 
+require("./routs/router")(app);
+
 app.use(express.static('public'));
 
 
