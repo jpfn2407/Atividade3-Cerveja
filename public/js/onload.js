@@ -5,7 +5,7 @@ window.onload = () => {
     getData();
 
     async function getData(){
-        var request = new Request('/api/jola')
+        var request = new Request('https://cerveja.vercel.app/api/jola')
 
         console.log(request)
 
