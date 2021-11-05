@@ -5,5 +5,5 @@ module.exports = app => {
 
     router.get("/", controlador.fetchWebsitesData);
 
-    app.use('/', router);
+    app.use('/api/jola', router);
 };

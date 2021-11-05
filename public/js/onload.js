@@ -5,7 +5,7 @@ window.onload = () => {
     getData();
 
     async function getData(){
-        var request = new Request('/')
+        var request = new Request('/api/jola')
 
         console.log(request)
 
