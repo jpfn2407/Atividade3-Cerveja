@@ -9,10 +9,11 @@ window.onload = () => {
 
         console.log(request)
 
-        await fetch(request).then(async function loadData(response){
+        await fetch(request).then(async function (response){
             let texto = "";
 
-            var lista = await response.json();
+            var lista = []
+            lista = await response.json();
             console.log(lista);
 
             for(const cerveja of lista){
