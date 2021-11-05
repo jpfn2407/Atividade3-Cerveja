@@ -5,5 +5,5 @@ module.exports = app => {
 
     router.get("/", controlador.fetchWebsitesData);
 
-    app.use('https://cerveja.vercel.app/api/jola', router);
+    app.use('/', router);
 };
