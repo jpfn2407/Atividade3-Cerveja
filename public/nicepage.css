@@ -4,6 +4,16 @@
  * Copyright 2014-2020 Froala Labs
  */
 
+ .table__header {
+  background-color: transparent;
+  cursor: pointer;
+}
+ 
+.sortable:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after{ 
+  content: " \25B4\25BE";
+  cursor: pointer;
+}
+
 .fr-clearfix::after {
   clear: both;
   display: block;

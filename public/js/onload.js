@@ -1,3 +1,4 @@
+
 window.onload = () => {
 
     getData();
@@ -16,25 +17,19 @@ window.onload = () => {
 
             for(const cerveja of lista){
                 texto += `
-                <tr style="height: 75px;">
-                  <td class="u-border-1 u-border-grey-30 u-table-cell">${cerveja.superMercado}</td>
-                  <td class="u-border-1 u-border-grey-30 u-table-cell">${cerveja.marca}</td>
-                  <td class="u-border-1 u-border-grey-30 u-table-cell">${cerveja.tamanho}</td>
-                  <td class="u-border-1 u-border-grey-30 u-table-cell">${cerveja.preçoAtual}€</td>
-                  <td class="u-border-1 u-border-grey-30 u-table-cell">${cerveja.preçoAntigo}€</td>
-                  <td class="u-border-1 u-border-grey-30 u-table-cell">${cerveja.desconto}</td>
-                  <td class="u-border-1 u-border-grey-30 u-table-cell">${cerveja.preçoPorLitro}€/L</td>
+                <tr class="mx-3">
+                  <td >${cerveja.superMercado}</td>
+                  <td >${cerveja.marca}</td>
+                  <td >${cerveja.tamanho}</td>
+                  <td >${cerveja.preçoAtual}€</td>
+                  <td >${cerveja.preçoAntigo}€</td>
+                  <td >${cerveja.desconto}</td>
+                  <td >${cerveja.preçoPorLitro}€/L</td>
                 </tr>
                 `;
             }
-    
-            document.getElementById("table").innerHTML = texto;
-
-            
-    
-        
+            document.getElementById("table").innerHTML = texto;        
         });
-    
     } 
 }
 
